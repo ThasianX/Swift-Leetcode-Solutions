@@ -1,6 +1,7 @@
 // Kevin Li - 12:25 PM - 4/19/20 - macOS 10.15
 
 // https://leetcode.com/problems/jewels-and-stones/
+// Time: O(n). Space: O(m) - m being the number of characters in J
 class Solution {
     func numJewelsInStones(_ J: String, _ S: String) -> Int {
         var jewelSet: Set<Character> = []

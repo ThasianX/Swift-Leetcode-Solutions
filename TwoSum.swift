@@ -1,6 +1,7 @@
 // Kevin Li - 1:13 PM - 4/18/20 - macOS 10.15
 
 // https://leetcode.com/problems/two-sum/
+// Time: O(n). Space: O(n)
 class Solution {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var map: [Int: Int] = [:]

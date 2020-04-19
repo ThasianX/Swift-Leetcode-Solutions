@@ -1,8 +1,9 @@
 // Kevin Li - 11:27 AM - 4/19/20 - macOS 10.15
 
 // https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
+// Time: O(n). Space: O(1)
 class Solution {
-    func numberOfSteps (_ num: Int) -> Int {
+    func numberOfSteps(_ num: Int) -> Int {
         var steps = 0
         var number = num
 
