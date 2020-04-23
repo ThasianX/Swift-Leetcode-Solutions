@@ -1,7 +1,8 @@
 // Kevin Li - 10:00 PM - 4/19/20 - macOS 10.15
 
 // https://leetcode.com/problems/squares-of-a-sorted-array/
-// Space:
+// Time: O(n)
+// Space: O(n)
 
 class Solution {
     func sortedSquares(_ A: [Int]) -> [Int] {
