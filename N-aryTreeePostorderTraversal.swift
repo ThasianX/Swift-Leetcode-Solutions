@@ -23,7 +23,7 @@ class Solution {
             return []
         }
         var arr = [Int]()
-        root.postOrder { node in
+        root.traversePostOrder { node in
             arr.append(node.val)
         }
         return arr
@@ -33,8 +33,8 @@ class Solution {
 
 extension Node {
 
-    func postOrder(_ visit: (Node) -> Void) {
-        children.forEach { $0.postOrder(visit) }
+    func traversePostOrder(_ visit: (Node) -> Void) {
+        children.forEach { $0.traversePostOrder(visit) }
         visit(self)
     }
 
