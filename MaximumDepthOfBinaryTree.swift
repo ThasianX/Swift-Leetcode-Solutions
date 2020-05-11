@@ -1,8 +1,8 @@
 // Kevin Li - 7:15 PM - 5/10/20 - macOS 10.15
 
 // https://leetcode.com/problems/maximum-depth-of-binary-tree/
-// Time: O(
-// Space: O(
+// Time: O(n)
+// Space: O(1)
 
 /**
  * Definition for a binary tree node.
@@ -22,7 +22,10 @@
 class Solution {
 
     func maxDepth(_ root: TreeNode?) -> Int {
-
+        guard let root = root else {
+            return 0
+        }
+        return 1 + max(maxDepth(root.left), maxDepth(root.right))
     }
 
 }
